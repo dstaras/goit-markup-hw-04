@@ -7,12 +7,13 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Header section-->
     <header class="header-section">
-        <div class="header-container">
+        <div class="header container">
             <a href="./index.html" class="logo">
                 <span class="web-color">Web</span>Studio
             </a>
@@ -48,77 +49,83 @@
         </div>
     </header>
     <!--Main sectoin--> 
-    <main class="main-content">
+     <main class="main-content">
         <!--Head -->
-        <section class="head">
-            <div class="overlay"></div>
-            <div class="business-solutions">
-                
-                <h1 class="heading">Эффективные решения<br> для вашего бизнеса</h1>
-                <button type="button" class="button">Заказать услугу</button>
+        <section class="head ">
+            <div class="container">
+                <div class="business-solutions">
+                    
+                    <h1 class="heading">Эффективные решения<br> для вашего бизнеса</h1>
+                    <button type="button" class="button" data-modal-open>Заказать услугу</button>
+                </div>
             </div>
         </section>
         <!--Company features-->
         <section class="company-features">
-            <ul class="features">
-                <li class="container attention">
-                    <div class="container-features">
-                        <svg class="icon-features">
-                            <use href="./img/icons.svg#icon-antenna-1"></use>
-                        </svg>
-                    </div> 
-                    <h3 class="title">Внимание к деталям</h3>
-                    <p class="text"> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="container punctuality">
-                    <div class="container-features">
-                        <svg class="icon-features">
-                            <use href="./img/icons.svg#icon-clock-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Пунктуальность</h3>
-                    <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="container planning">
-                    <div class="container-features">
-                        <svg class="icon-features">
-                            <use href="./img/icons.svg#icon-diagram-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Планирование</h3>
-                    <p class="text"> Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="container modern">
-                    <div class="container-features">
-                        <svg class="icon-features">
-                            <use href="./img/icons.svg#icon-astronaut-1"></use>
-                        </svg>
-                    </div>
-                    <h3 class="title">Современные технологии</h3>
-                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="features">
+                    <li class="box attention">
+                        <div class="container-features">
+                            <svg class="icon-features">
+                                <use href="./img/icons.svg#icon-antenna-1"></use>
+                            </svg>
+                        </div> 
+                        <h3 class="title">Внимание к деталям</h3>
+                        <p class="text"> Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="box punctuality">
+                        <div class="container-features">
+                            <svg class="icon-features">
+                                <use href="./img/icons.svg#icon-clock-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Пунктуальность</h3>
+                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="box planning">
+                        <div class="container-features">
+                            <svg class="icon-features">
+                                <use href="./img/icons.svg#icon-diagram-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Планирование</h3>
+                        <p class="text"> Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="box modern">
+                        <div class="container-features">
+                            <svg class="icon-features">
+                                <use href="./img/icons.svg#icon-astronaut-1"></use>
+                            </svg>
+                        </div>
+                        <h3 class="title">Современные технологии</h3>
+                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!--Our work -->
         <section class="work-section">
-            <div class="work-container">
+            <div class="work container">
                 <h2 class="our-work">Чем мы занимаемся</h2>
                 <ul class="work-image">
                     <li>
                         <img class="image" src="img/homework.img1.jpg" alt="Photo" width="370">
+                        <p class="label">Десктопные приложения</p>
                     </li>
                     <li>
                         <img class="image" src="img/homework.img2.jpg" alt="Photo" width="370">
+                        <p class="label">Мобильные приложения</p>
                     </li>
                     <li>
                         <img class="image" src="img/homework.img3.jpg" alt="Photo" width="370">
+                        <p class="label">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
-        </section>  
+        </section> 
         <!--Our team -->
         <section class="our-team">
-            <div class="team-container">
+            <div class="team container">
                 <h2 class="team"> Наша команда</h2>
                 <ul class="squad">
                     <li class="staff">
@@ -265,7 +272,7 @@
             </div>
         </section>
         <section class="clients">
-            <div class="clients-container">
+            <div class="container">
                 <h2 class="regular-customers">Постоянные клиенты</h2>
                 <ul class="icon-list-client">
                     <li>
@@ -313,10 +320,10 @@
                 </ul>
             </div>
         </section>
-    </main>     
+    </main>   
     <!--Footer section-->
     <footer class="footer-section">
-        <section class="footer-container">
+        <section class="footer container">
             <div>
                 <a href="" class="logo footer">
                     <span class="web-color">Web</span>Studio
@@ -369,5 +376,17 @@
         </section>
         
     </footer>
+    <!-- Modal window -->
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="icon-modal-close">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
